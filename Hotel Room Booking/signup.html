@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <h1>Hotel Room Booking</h1>
+    <style>
+        h1{
+            text-align:center; color:red;
+        }
+
+        body {
+            background-color: burlywood;
+            background-image: url('dp.jpg');
+        }
+
+        input {
+            width: 500px;
+            height: 50px;
+            background-color: rgb(203, 214, 207);
+        }
+
+        #signup {
+            max-width: 500px;
+            background-color: rgb(174, 197, 197);
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 20px;
+            padding: 20px; 
+            background-size:cover;
+        }
+    </style>
+</head>
+<body>
+    <form action="insert.php" method="POST">
+        <div id="signup">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter username"><br><br>
+            
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" placeholder="Enter Email"><br><br>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter password"><br><br>
+            
+            <input type="submit" value="Signup">
+        </div>
+    </form>
+</body>
+</html>

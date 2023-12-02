@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hotel Room Booking - Login</title>
+    <style>
+        body {
+            background-image: url('dp.jpg');
+        }
+
+        #login {
+            background-color: lightslategray;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            font-size: 20px;
+        }
+
+        h1 {
+            color: red;
+            text-align: center;
+        }
+
+        input {
+            width: 500px;
+            height: 50px;
+            background-color: rgb(203, 214, 207);
+            margin-bottom: 10px;
+        }
+
+        #username {
+            color: chartreuse;
+        }
+
+        #sigin {
+            color: blue;
+        }
+    </style>
+    <script>
+        function redirectToSignupPage() {
+            window.location.href = "signup.html";
+        }
+
+        function display() {
+            document.getElementById("msg").innerHTML = "Hi Welcome!";
+        }
+
+        function loginpage() {
+            window.location.href = "sample.jpg";
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Hotel Room Booking</h1>
+    <form action="login.php" method="POST">
+        <div id="login">
+            <input type="text" id="username" name="username" placeholder="Enter username">                      <br><br>
+            <input type="password" id="password" name="password" placeholder="Enter password"><br><br>
+
+            <input type="submit" style="color: blue" value="Login" onclick="loginpage()">
+            <br><br>
+            <input type="button" style="color: orange" value="Sign Up" onclick="redirectToSignupPage()">
+            <br>
+            <div id="msg">
+                <input type="button" style="color: green" value="Click it!" onclick="display()">
+            </div>
+        </div>
+
+    </form>
+</body>
+
+</html>
